@@ -53,10 +53,11 @@ $(document).ready(function() {
 	});*/
 
 	$(document).keypress(function(event) {
-		if(event.which === /*some span id*/) {
-			$(/*some span id*/)./*add color*/();
-		}
-		
-	});
+			$("#w").css({'background-color':'rgb(255,255,0)'});
+		})
+		$(document).keyup(function(event) {
+			$("#w").css({'background-color':'rgb(245,245,245)'});
+	})
+	
 });
 
