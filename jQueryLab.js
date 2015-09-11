@@ -18,5 +18,19 @@ The users words per minute should be calculated and displayed on the screen when
  *Can be calculate by number of words typed divided by minutes minus 2 for every mistake.
 There should be a delay so the user can see the score, asked if they would like to play again. 
 If confirmed yes, resload the page. If no, leave as is.*/
+function toggleDiv(keyboard-upper-container) {
+   $("#"+keyboard-lower-container).toggle();
+}
+
+
+
+
+var sentences = ['ten ate neite ate nee enet ite ate inet ent eate', 
+'Too ato too nOt enot one totA not anot tOO aNot', 
+'oat itain oat tain nate eate tea anne inant nean', 
+'itant eate anot eat nato inate eat anot tain eat', 
+'nee ene ate ite tent tiet ent ine ene ete ene ate’];
+
+
 
 $(document).ready()
