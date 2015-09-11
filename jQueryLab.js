@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<link rel="stylesheet" href="styles.css">
-		<script>
 /*Basic Req's:
 Create two keyboards (include space bar): 
 * First keyboard, lowercase keys, numbers and special characters acessed without shift.
@@ -23,10 +18,5 @@ The users words per minute should be calculated and displayed on the screen when
  *Can be calculate by number of words typed divided by minutes minus 2 for every mistake.
 There should be a delay so the user can see the score, asked if they would like to play again. 
 If confirmed yes, resload the page. If no, leave as is.*/
-		</script>
-	</head>
-	<body>
-		
-	</body>
-	
-</html>
+
+$(document).ready()
