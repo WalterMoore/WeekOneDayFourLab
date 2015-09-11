@@ -44,7 +44,10 @@ $(document).ready(function() {
 		if (event.which === 16){
 			$("#keyboard-lower-container").show();
 			$("#keyboard-upper-container").hide();
-		}
+		}else{		
+
+			$('.key').css({'background-color':'rgb(245,245,245)'});
+	}
 	});
 	/*$(document).keydown(function() {
 		if (event.which === "#this"){
@@ -53,11 +56,10 @@ $(document).ready(function() {
 	});*/
 
 	$(document).keypress(function(event) {
-			$("#w").css({'background-color':'rgb(255,255,0)'});
-		})
-		$(document).keyup(function(event) {
-			$("#w").css({'background-color':'rgb(245,245,245)'});
+		var keyCharCode = event.charCode;
+		var charID = String.fromCharCode (keyCharCode);
+			$('#'+keyCharCode).css({'background-color':'rgb(255,255,0)'});
+			$('#'+charID).css({'background-color':'rgb(255,255,0)'});
 	})
-	
 });
 
