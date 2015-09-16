@@ -4,14 +4,16 @@
 }
 
 #word-container {
-  font-size: 36px;
+  font-family: Courier New, Courier, monospace;
+  font-size: 24px;
   letter-spacing: 3px;
 }
 
 #block {
+  position: absolute;
   margin-top: 10px;
-  width: 30px;
-  height: 35px;
+  width: 15px;
+  height: 15px;
   background-color: yellow;
 }
 
@@ -20,8 +22,7 @@
 }
 
 #next-letter {
-  font-size: 38px;
-  /*float: left;*/  
+  font-size: 38px;  
 }
 
 .keys-row {
@@ -29,13 +30,8 @@
   padding: 10px 0;
 }
 
-/*#block{
-  float: left;
-}*/
-
 #words-typed {
   font-size: 20px;
-  /*float: left;*/
 }
 .glyphicon-ok {
   color: #1DA237

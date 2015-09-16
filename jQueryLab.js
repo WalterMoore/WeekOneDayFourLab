@@ -28,7 +28,28 @@ var sentences = ['ten ate neite ate nee enet ite ate inet ent eate',
 'itant eate anot eat nato inate eat anot tain eat', 
 'nee ene ate ite tent tiet ent ine ene ete ene ate'];
 
+var lines = [];
+var lineCount = 0;
+$(sentences).each(function(){
+   var letters = this.split('');
+   console.log(letters);
+   var line = $('<div class="letters"></div>');
+   $(letters).each(function() {
+       var letter = this;
+       if(letter == ' ') {
+           letter = '&nbsp;';
+       }
+       line.append($('<div class="letter"></div>').html(letter));
+   });
+   lines.push(line);
+});
 
+$('#words').append(lines[lineCount]);
+//provide sentences-- trying to show them all just to start.
+//$(sentences).show();
+
+//highlight letters same as selecting boxes in Lab 3?
+//seems like you could reuse code from lab 3
 
 $(document).ready(function() {
 	$("#keyboard-upper-container").hide();
@@ -49,11 +70,7 @@ $(document).ready(function() {
 			$('.key').css({'background-color':'rgb(245,245,245)'});
 	}
 	});
-	/*$(document).keydown(function() {
-		if (event.which === "#this"){
-			$("#this").highlight();
-		}
-	});*/
+
 
 	$(document).keypress(function(event) {
 		var keyCharCode = event.charCode;
@@ -63,3 +80,7 @@ $(document).ready(function() {
 	})
 });
 
+//set up a clock of some sort to test wpm.
+
+//delay so can see score. 3000?
+//prompt to play again. if yes, reload page.
